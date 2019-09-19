@@ -1,7 +1,7 @@
 body {
     background-color:black;
     background-image: url("img/eberhard-grossgasteiger-YV_gbygzlWk-unsplash.jpg");
-    background-size: 100%;  
+    background-size: 200%;  
     background-repeat: no-repeat;
 }
 .homePage h1 {
@@ -42,7 +42,7 @@ body {
 
 .resultsText {
     background-color: white;
-    background-image: url("img/partyski.jpg");
+    background-image: url("img/ski-party.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 	height: 25em;
@@ -56,6 +56,7 @@ body {
 #daResults {
     background-color: rgba(0, 0, 0, .2);
     border-radius: 25px;
+    padding: 1px;
     text-shadow: gold 1px 0 10px;
     color: white;
     font-size: 1em;
@@ -86,7 +87,7 @@ body {
 }
 .eachQuestion {
     background-color: white; 
-    background-image: url("img/toa-heftiba-vLIIhIz7cao-unsplash.jpg");
+    background-image: url("img/powder.jpeg");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 35em;
@@ -111,19 +112,32 @@ body {
 
 .eachQuestion h2{
     font-size: 50px;
+    margin: auto;
 
 }
 .eachQuestion p{
     font-size: 30px;
 }
 
-@media screen and (min-width: 930px) {
+@media screen and (max-width: 930px) {
     .eachQuestion {
-        background-image: url("img/powder.jpeg");
+        background-image: url("img/toa-heftiba-vLIIhIz7cao-unsplash.jpg");
     }
 }
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 460px) {
+    .eachQuestion {
+        background-size: 128%;
+    }
+}
+@media screen and (max-width: 800px) {
     .resultsText {
-        background-image: url("img/ski-party.jpg");
+        background-image: url("img/partyski.jpg");
+        max-height: 345px;
+        
+    }
+}
+@media screen and (min-width: 545px) {
+    body {
+        background-size: 100%;
     }
 }
