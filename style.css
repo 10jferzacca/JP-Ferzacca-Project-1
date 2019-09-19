@@ -1,0 +1,129 @@
+body {
+    background-color:black;
+    background-image: url("img/eberhard-grossgasteiger-YV_gbygzlWk-unsplash.jpg");
+    background-size: 100%;  
+    background-repeat: no-repeat;
+}
+.homePage h1 {
+    font-size: 80px;
+}
+.homePage h2 {
+    font-size: 30px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: navy;
+    font-family: 'Manjari', sans-serif;
+}
+
+#openQuestions {
+    margin: 0 auto; 
+    background-color: rgb(5, 2, 118);
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+}
+#finalResults {
+    background-color: rgba(0,0,0,.75);
+    background-image: url(img/snow01.gif);
+    position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+    overflow: auto;
+    display: none;
+}
+
+.resultsText {
+    background-color: white;
+    background-image: url("img/partyski.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+	height: 25em;
+    width: auto;
+    padding: 10px;
+	border-radius: 25px;
+	margin: 150px 25px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#daResults {
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 25px;
+    text-shadow: gold 1px 0 10px;
+    color: white;
+    font-size: 1em;
+    width: auto;
+}
+.resultsText button {
+    background-color: rgb(5, 2, 118);
+    border-radius: 10px;
+    color: white;
+    padding: 10px 32px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    font-size: 16px; 
+  }
+
+#questions {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(img/snow01.gif);
+    position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+    overflow: auto;
+    display: none;
+}
+.eachQuestion {
+    background-color: white; 
+    background-image: url("img/toa-heftiba-vLIIhIz7cao-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 35em;
+    width: auto;
+    padding: 20px;
+	border-radius: 25px;
+	margin: 150px 25px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    
+}
+.eachQuestion button {
+    background-color: rgb(5, 2, 118);
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    margin: 30px;
+    max-width: 500px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+}
+
+.eachQuestion h2{
+    font-size: 50px;
+
+}
+.eachQuestion p{
+    font-size: 30px;
+}
+
+@media screen and (min-width: 930px) {
+    .eachQuestion {
+        background-image: url("img/powder.jpeg");
+    }
+}
+@media screen and (min-width: 800px) {
+    .resultsText {
+        background-image: url("img/ski-party.jpg");
+    }
+}
