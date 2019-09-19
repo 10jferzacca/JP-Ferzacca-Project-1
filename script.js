@@ -28,19 +28,19 @@ const seeResults = () => {
   } else if (score === 3) {
     theResult.innerHTML = "You scored 3 of 10!" + " You should stick to the green slopes pal."
   } else if (score === 4) {
-    theResult.innerHTML = "You scored 4 of 10!" + " Your still learning, but I see potential!"
+    theResult.innerHTML = "You scored 4 of 10!" + " You're still learning, but I see potential!"
   } else if (score === 5) {
-    theResult.innerHTML = "You scored 5 of 10!" + " I think your ready for the blue slopes."
+    theResult.innerHTML = "You scored 5 of 10!" + " I think you're ready for the blue slopes."
   } else if (score === 6) {
     theResult.innerHTML = "You scored 6 of 10!" + " Alright lets try skiing a little faster next time."
   } else if (score === 7) {
-    theResult.innerHTML = "You scored 7 of 10!" + " I think your ready to try your first BLACK DIAMOND!"
+    theResult.innerHTML = "You scored 7 of 10!" + " I think you're ready to try your first BLACK DIAMOND!"
   } else if (score === 8) {
-    theResult.innerHTML = "You scored 8 of 10!" + " Alright your on your way to becoming a sender!!"
+    theResult.innerHTML = "You scored 8 of 10!" + " Alright you are on your way to becoming a sender!!"
   } else if (score === 9) {
     theResult.innerHTML = "You scored 9 of 10!" + " DOUBLE BLACK DIAMONDS here we come!!!"
   } else if (score === 10) {
-    theResult.innerHTML = "You scored 1 of 10!" + " Your a pro skier? That's funny because I am so much better then you!"
+    theResult.innerHTML = "You scored 10 of 10!" + " You are a pro skier? That's funny because I am so much better then you!"
   }
 }
 
