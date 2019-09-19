@@ -37,8 +37,11 @@ const seeResults = () => {
     theResult.innerHTML = "You scored 1 of 10!" + " Your a pro skier? That's funny because I am so much better then you!"
   }
 }
-   
+const scrollTop = () => {
+    answer.scrollTo(0,0); 
+    }
 const exitGame = () => {
+    
     finalResults.style.display = 'none';
 }
 
@@ -89,6 +92,7 @@ function (e) {
     if (e.target.classList.contains("answer1")) {
         updateScore();
     };
+scrollTop();
 seeResults();
 questions.style.display = 'none';
 finalResults.style.display = 'block';
