@@ -1,18 +1,24 @@
-
+// Variable for Starting Games Button
 const startGame = document.getElementById('openQuestions');
+// Variable for content of Results  Page
 const results = document.getElementById('seeResults');
+//Varialbe for Results Page
 const showResults = document.getElementById('finalResults');
+//Variable for button exiting game/ Restarting Game
 const exitPage = document.getElementById('exit');
+// Variable for the Answer Choices/questions
 const answer = document.getElementById('questions');
+// Variable for the result text
 const theResult = document.querySelector(".theResults");
+// variable for the last question
 const last = document.querySelector('#lastQuestion');
 
+//Function to open or display modal where questions sit
 const openQuestions = () => {
   questions.style.display = 'block'
 }
+//Function to display Results in results modal and a result for each out come!
 const seeResults = () => {
-//   questions.style.display = 'none';
-//   finalResults.style.display = 'block';
   if (score === 0) {
       theResult.innerHTML = "You scored 0 of 10!" + " You are a jerry..."
   } else if (score === 1) {
@@ -37,36 +43,37 @@ const seeResults = () => {
     theResult.innerHTML = "You scored 1 of 10!" + " Your a pro skier? That's funny because I am so much better then you!"
   }
 }
+
+//Function to scroll to top of page
 const scrollTop = () => {
     answer.scrollTo(0,0); 
     }
+//Function to scroll stop displaying results modal
 const exitGame = () => {
     
     finalResults.style.display = 'none';
 }
-
+//Function to scroll to next question, Question length is 750 in browser
 const scrollD = () => {
 answer.scrollBy(0, 750); 
 }
-
-
+//Variable for the score
 let score = 0;
+// Variable for updating score by incrementing by 1
 const updateScore = () => {
     score++;
     console.log(score);
 }
-
-
- 
-
+// Event Listeners each click to start game or see result
 startGame.addEventListener('click', openQuestions);results.addEventListener('click', seeResults);
+// event lister for clicks in the results exit button to reset game, exit modal
 exitPage.addEventListener('click', 
 function () {
 exitGame();
 score = 0;
 console.log("Score is " + score);
 })
-
+// event listener for each answer of quiz selected
 answer.addEventListener('click', 
 function (e) {
     console.log(e.target)
@@ -83,10 +90,7 @@ function (e) {
         console.log("nada");   
     }
 })
-
-// const checkScore = () => {
-//    score;
-// }
+// Event listener for the last question to move on to finals page
 last.addEventListener('click',
 function (e) {
     if (e.target.classList.contains("answer1")) {
@@ -97,15 +101,6 @@ seeResults();
 questions.style.display = 'none';
 finalResults.style.display = 'block';
 });
-
-
-
-
-
-// Goal 
-// when I click on the anwnser change score to 1 
-
-
 
 
 /*
