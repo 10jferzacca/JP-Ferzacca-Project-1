@@ -38,10 +38,17 @@ Any help with Moblie Friendly CSS is greatly apprciated!
 ## Acknowledgments
 
 **Hat Tip**
+
 Taylor Penberthy
+
 Carlos Godoy
+
 Hou Chia
+
 Bonnie Peters
+
 Melaina Valentine
+
+Lauren Robinson
 
 for usuful tips! Thank you!
