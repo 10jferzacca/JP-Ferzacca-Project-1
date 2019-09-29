@@ -1,11 +1,11 @@
 
 
 # SEI Project 1 - Trivia Game
-# Link to Project
-https://10jferzacca.github.io/JP-Ferzacca-Project-1/
-
 
 In this project I built a trivia game. Using HTML, CSS and Javascript to create a simple trivia asking questions about skiing. Keeping track of the score and diplaying the results with a modal.
+
+## Link to Project
+https://10jferzacca.github.io/JP-Ferzacca-Project-1/
 
 ## User Stories
 While building code I used a modal to display the questions once the start game button (TAKE ME TO THE TOP OF THE MOUNTAIN) was clicked. Finally each question has a series of answers seperated with either an answers1 class or wrong class to distinguish the correct anser and set up a way to eventually keep score. At the last question all the answers choices send you to the results page. Where depending on your score a string of text will be displayed. 
